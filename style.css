@@ -1,0 +1,58 @@
+/* Genel Sayfa Tasarımı */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0fa;
+    color: #333;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Başlıklar */
+h1, h2, h3 {
+    color: #8e44ad;
+    text-align: center;
+}
+
+/* Form Tasarımı */
+form {
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Giriş Alanları */
+input, textarea, select {
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Butonlar */
+button {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7d3c98;
+}
+
+/* Bağlantılar */
+a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
