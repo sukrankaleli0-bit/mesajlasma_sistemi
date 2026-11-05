@@ -11,3 +11,17 @@ CREATE TABLE IF NOT EXISTS kullanicilar (
     sifre VARCHAR(255) NOT NULL,
     kayit_tarihi TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+CREATE TABLE IF NOT EXISTS mesajlar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    gonderen_id INT NOT NULL,
+    alici_id INT NOT NULL,
+    mesaj TEXT NOT NULL,
+    is_read TINYINT(1) DEFAULT 0,
+    gonderim_tarihi TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    FOREIGN KEY (gonderen_id)
+        REFERENCES kullanicilar(id),
+
+    FOREIGN KEY (alici_id)
+        REFERENCES kullanicilar(id)
+);
