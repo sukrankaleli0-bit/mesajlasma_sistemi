@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS mesajlasma_sistemi
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_unicode_ci;
+
+USE mesajlasma_sistemi;
+
+CREATE TABLE IF NOT EXISTS kullanicilar (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ad VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    sifre VARCHAR(255) NOT NULL,
+    kayit_tarihi TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
